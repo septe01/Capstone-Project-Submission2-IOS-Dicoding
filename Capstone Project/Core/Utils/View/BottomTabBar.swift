@@ -10,6 +10,8 @@ import SwiftUI
 struct BottomTabBar: View {
     @State var selection = 1
 
+    let profilePresenter = ProfilePresenter(profileUseCase: Injection.init().provideProfile())
+
     var body: some View {
             TabView(selection: $selection) {
                 FoodsView()
@@ -29,10 +31,9 @@ struct BottomTabBar: View {
                         Label("About", systemImage: "person.crop.circle.fill")
                     }
                     .tag(3)
+                    .environmentObject(profilePresenter)
             }
             .accentColor(Color("ColorGreyDark"))
-            .navigationTitle(selection == 1 ? "Games" : selection == 2 ? "Favorite" : "About")
-            .navigationBarTitleDisplayMode(.inline)
         }
 }
 

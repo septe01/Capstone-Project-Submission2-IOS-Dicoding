@@ -15,3 +15,4 @@
 Tech inside Capstone Project :
 
 - [SwiftLint](https://github.com/realm/SwiftLint) - A tool to enforce Swift style and conventions
+- [AlamoFire](https://github.com/Alamofire/Alamofire) - Alamofire is an HTTP networking library written in Swift.

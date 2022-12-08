@@ -10,10 +10,21 @@
 		B33BDC2F293EC1260043C2DB /* Capstone_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BDC2E293EC1260043C2DB /* Capstone_ProjectApp.swift */; };
 		B33BDC33293EC1270043C2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33BDC32293EC1270043C2DB /* Assets.xcassets */; };
 		B33BDC36293EC1270043C2DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33BDC35293EC1270043C2DB /* Preview Assets.xcassets */; };
+		B3405DE829414994006734A5 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405DE729414994006734A5 /* ProfileModel.swift */; };
+		B3405DED29415336006734A5 /* ProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405DEC29415336006734A5 /* ProfileRepository.swift */; };
+		B3405DF12941543E006734A5 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405DF02941543E006734A5 /* ProfileDataSource.swift */; };
+		B3405DF42941548C006734A5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B3405DF32941548C006734A5 /* Alamofire */; };
+		B3405DF629415591006734A5 /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405DF529415591006734A5 /* ProfileResponse.swift */; };
+		B3405DFB29415781006734A5 /* CustomeError+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405DFA29415781006734A5 /* CustomeError+Ext.swift */; };
+		B3405DFE29415B0E006734A5 /* ProfileMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405DFD29415B0E006734A5 /* ProfileMapper.swift */; };
+		B3405E052941674C006734A5 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405E042941674C006734A5 /* Injection.swift */; };
+		B3405E0B294168E0006734A5 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405E0A294168E0006734A5 /* ProfileInteractor.swift */; };
+		B3405E0E29416AAA006734A5 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405E0D29416AAA006734A5 /* ProfilePresenter.swift */; };
 		B3423B5729400EFF00D5C381 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3423B5629400EFF00D5C381 /* AboutView.swift */; };
 		B3423B592940188300D5C381 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3423B582940188300D5C381 /* BottomTabBar.swift */; };
 		B3423B5D2940196700D5C381 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3423B5C2940196700D5C381 /* FavoriteView.swift */; };
 		B3423B6329401AF300D5C381 /* FoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3423B6229401AF300D5C381 /* FoodsView.swift */; };
+		B3E794302940CB69005EAB73 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7942F2940CB69005EAB73 /* APICall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,10 +32,21 @@
 		B33BDC2E293EC1260043C2DB /* Capstone_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectApp.swift; sourceTree = "<group>"; };
 		B33BDC32293EC1270043C2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B33BDC35293EC1270043C2DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3405DE729414994006734A5 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		B3405DEC29415336006734A5 /* ProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
+		B3405DF02941543E006734A5 /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
+		B3405DF529415591006734A5 /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
+		B3405DFA29415781006734A5 /* CustomeError+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomeError+Ext.swift"; sourceTree = "<group>"; };
+		B3405DFD29415B0E006734A5 /* ProfileMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMapper.swift; sourceTree = "<group>"; };
+		B3405E042941674C006734A5 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		B3405E0A294168E0006734A5 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		B3405E0D29416AAA006734A5 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		B3423B5629400EFF00D5C381 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		B3423B582940188300D5C381 /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
 		B3423B5C2940196700D5C381 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		B3423B6229401AF300D5C381 /* FoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsView.swift; sourceTree = "<group>"; };
+		B3E7942F2940CB69005EAB73 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		B3E794312940CCB1005EAB73 /* Capstone-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Capstone-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3405DF42941548C006734A5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +80,7 @@
 		B33BDC2D293EC1260043C2DB /* Capstone Project */ = {
 			isa = PBXGroup;
 			children = (
+				B3E794312940CCB1005EAB73 /* Capstone-Project-Info.plist */,
 				B33BDC42293ED3090043C2DB /* App */,
 				B33BDC43293ED3290043C2DB /* Core */,
 				B33BDC41293ED2E40043C2DB /* Module */,
@@ -114,6 +138,7 @@
 		B33BDC44293ED3590043C2DB /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				B3405E042941674C006734A5 /* Injection.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -121,7 +146,10 @@
 		B33BDC45293ED3640043C2DB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B3423B582940188300D5C381 /* BottomTabBar.swift */,
+				B3405DFC29415AF4006734A5 /* Mapper */,
+				B3405DF829415767006734A5 /* Extensions */,
+				B3E7942E2940CAF4005EAB73 /* Network */,
+				B3E7942D2940CAE9005EAB73 /* View */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -129,6 +157,8 @@
 		B33BDC46293ED3770043C2DB /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				B3405DE629414976006734A5 /* Model */,
+				B3405E062941688E006734A5 /* UseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -136,13 +166,89 @@
 		B33BDC47293ED37E0043C2DB /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B3405DEB2941531B006734A5 /* Remote */,
+				B3405DEC29415336006734A5 /* ProfileRepository.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		B3405DE629414976006734A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3405DE729414994006734A5 /* ProfileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3405DEB2941531B006734A5 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				B3405DEE2941540B006734A5 /* Profile */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		B3405DEE2941540B006734A5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B3405DEF29415421006734A5 /* Response */,
+				B3405DF02941543E006734A5 /* ProfileDataSource.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B3405DEF29415421006734A5 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				B3405DF529415591006734A5 /* ProfileResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		B3405DF829415767006734A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3405DFA29415781006734A5 /* CustomeError+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B3405DFC29415AF4006734A5 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				B3405DFD29415B0E006734A5 /* ProfileMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		B3405E062941688E006734A5 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B3405E07294168A1006734A5 /* Profile */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B3405E07294168A1006734A5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B3405E0A294168E0006734A5 /* ProfileInteractor.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B3405E0C29416A8E006734A5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3405E0D29416AAA006734A5 /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		B3423B5329400E5800D5C381 /* About */ = {
 			isa = PBXGroup;
 			children = (
+				B3405E0C29416A8E006734A5 /* Presenter */,
 				B3423B5429400EC000D5C381 /* View */,
 			);
 			path = About;
@@ -188,6 +294,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B3E7942D2940CAE9005EAB73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3423B582940188300D5C381 /* BottomTabBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3E7942E2940CAF4005EAB73 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B3E7942F2940CB69005EAB73 /* APICall.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,6 +328,7 @@
 			);
 			name = "Capstone Project";
 			packageProductDependencies = (
+				B3405DF32941548C006734A5 /* Alamofire */,
 			);
 			productName = "Capstone Project";
 			productReference = B33BDC2B293EC1260043C2DB /* Capstone Project.app */;
@@ -236,6 +359,7 @@
 			);
 			mainGroup = B33BDC22293EC1260043C2DB;
 			packageReferences = (
+				B3405DF22941548C006734A5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = B33BDC2C293EC1260043C2DB /* Products */;
 			projectDirPath = "";
@@ -283,10 +407,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3405E052941674C006734A5 /* Injection.swift in Sources */,
 				B3423B5729400EFF00D5C381 /* AboutView.swift in Sources */,
+				B3405E0B294168E0006734A5 /* ProfileInteractor.swift in Sources */,
+				B3405DF629415591006734A5 /* ProfileResponse.swift in Sources */,
+				B3405DE829414994006734A5 /* ProfileModel.swift in Sources */,
+				B3405DF12941543E006734A5 /* ProfileDataSource.swift in Sources */,
 				B3423B592940188300D5C381 /* BottomTabBar.swift in Sources */,
+				B3E794302940CB69005EAB73 /* APICall.swift in Sources */,
 				B3423B5D2940196700D5C381 /* FavoriteView.swift in Sources */,
+				B3405DFB29415781006734A5 /* CustomeError+Ext.swift in Sources */,
+				B3405E0E29416AAA006734A5 /* ProfilePresenter.swift in Sources */,
 				B3423B6329401AF300D5C381 /* FoodsView.swift in Sources */,
+				B3405DFE29415B0E006734A5 /* ProfileMapper.swift in Sources */,
+				B3405DED29415336006734A5 /* ProfileRepository.swift in Sources */,
 				B33BDC2F293EC1260043C2DB /* Capstone_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +553,7 @@
 				DEVELOPMENT_TEAM = Q36DPB2949;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Capstone-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,6 +583,7 @@
 				DEVELOPMENT_TEAM = Q36DPB2949;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Capstone-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -488,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3405DF22941548C006734A5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3405DF32941548C006734A5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3405DF22941548C006734A5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B33BDC23293EC1260043C2DB /* Project object */;
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Capstone_ProjectApp: App {
+
     var body: some Scene {
         WindowGroup {
             BottomTabBar()

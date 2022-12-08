@@ -8,58 +8,82 @@
 import SwiftUI
 
 struct AboutView: View {
+
+    @EnvironmentObject var profilePresenter: ProfilePresenter
+
     var body: some View {
         ZStack {
             SwiftUI.Color(.white).ignoresSafeArea()
-            ZStack {
-                ScrollView {
-                    VStack(spacing: 14) {
-                        VStack(spacing: 14) {
-                            Image("profile")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .cornerRadius(100)
-
-                            VStack(spacing: 4) {
-                                Text("SepteHabudin")
-                                    .font(.title3)
-                                    .bold()
-                                    .foregroundColor(Color.black)
-
-                                Text("FullStack Developer")
-                                    .font(.subheadline)
-                                    .tracking(1)
-                                    .foregroundColor(Color.black)
-                            }
-
-                            HStack(spacing: 50) {
-                                ButtonView(url: "https://github.com/septe01", image: "git")
-                                ButtonView(url: "https://www.instagram.com/septestia", image: "instagram")
-                                ButtonView(url: "https://www.linkedin.com/in/septe-habudin/", image: "linkedin")
-                            }
-                            .padding(.top, 20)
-                        }
-                        .padding()
-
-                        Divider()
-                            .frame(height: 1)
-                            .overlay(.gray)
-
-                        Text("""
-                               \tI am a FullStack Developer, I can build applications with javascript programming. when I make a web application I can use reactJs from my skills section, and when I make a mobile application I can use react native, as well as build a service I can use nodejs.
-                               but currently I am a FrontEnd Developer at a technology company in Jakarta, my job is to build web applications with the javascript library, namely ReactJS.
-                               """)
-                        .font(.body)
-                        .multilineTextAlignment(.leading)
-                        .padding()
-                        .foregroundColor(Color.black)
-
-                    }
-                    .padding(.top, 50)
+            if profilePresenter.loadingState {
+                VStack {
+                    Text("Loading...")
                 }
+            } else {
+                ZStack {
+                    ScrollView {
+                        VStack(spacing: 14) {
+                            VStack(spacing: 14) {
 
+                                if let profileImg = profilePresenter.profile {
+                                    AsyncImage(url: URL(string: profileImg.img)) { Image in
+                                        Image
+                                            .resizable()
+                                            .frame(width: 100, height: 100)
+                                            .cornerRadius(100)
+                                    } placeholder: {
+                                        ProgressView()
+                                            .progressViewStyle(CircularProgressViewStyle(tint: Color("ColorGreyDark")))
+
+                                    }
+                                }
+
+                                VStack(spacing: 4) {
+                                    Text(profilePresenter.profile?.name ?? "")
+                                        .font(.title3)
+                                        .bold()
+                                        .foregroundColor(Color.black)
+
+                                    Text(profilePresenter.profile?.title ?? "")
+                                        .font(.subheadline)
+                                        .tracking(1)
+                                        .foregroundColor(Color.black)
+                                }
+
+                                HStack(spacing: 50) {
+                                    if let profile = profilePresenter.profile {
+                                        ButtonView(url: profile.git, image: "git")
+                                        ButtonView(url: profile.instagram, image: "instagram")
+                                        ButtonView(url: profile.linkedin, image: "linkedin")
+                                    }
+                                }
+                                .padding(.top, 20)
+                            }
+                            .padding()
+
+                            Divider()
+                                .frame(height: 1)
+                                .overlay(.gray)
+
+                            Text("""
+                               \t\(profilePresenter.profile?.bio ?? "")
+                               """)
+                            .font(.body)
+                            .multilineTextAlignment(.leading)
+                            .padding()
+                            .foregroundColor(Color.black)
+
+                        }
+                        .padding(.top, 50)
+                    }
+
+                }
             }
         }
+        .onAppear(perform: {
+            if self.profilePresenter.profile == nil {
+                self.profilePresenter.getProfile()
+            }
+        })
     }
 }
 
@@ -79,8 +103,8 @@ struct ButtonView: View {
     }
 }
 
-struct AboutView_Previews: PreviewProvider {
-    static var previews: some View {
-        AboutView()
-    }
-}
+//struct AboutView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AboutView()
+//    }
+//}
