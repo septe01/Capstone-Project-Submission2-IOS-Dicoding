@@ -9,17 +9,29 @@ import Foundation
 
 final class Injection: NSObject {
 
-  private func provideRepository() -> ProfileRepositoryProtocol {
+    private func provideRepositoryCategory() -> CategoryRepositoryProtocol {
+        let remote: CategoryRemoteDataSource = CategoryRemoteDataSource.sharedInstance
 
-      let remote: ProfileDataSource = ProfileDataSource.sharedInstance
+        return CategoryRepository.sharedInstance(remote)
+    }
 
-      return ProfileRepository.sharedInstance(remote)
-  }
+    func provideCategory() -> CategoryUseCase {
+        let repository = provideRepositoryCategory()
+        return CategoryInteractor(repository: repository)
+    }
 
-  func provideProfile() -> ProfileUseCase {
-    let repository = provideRepository()
-    return ProfileInteractor(repository: repository)
-  }
+}
 
+extension Injection {
+    private func provideRepositoryProfile() -> ProfileRepositoryProtocol {
 
+        let remote: ProfileDataSource = ProfileDataSource.sharedInstance
+
+        return ProfileRepository.sharedInstance(remote)
+    }
+
+    func provideProfile() -> ProfileUseCase {
+      let repository = provideRepositoryProfile()
+      return ProfileInteractor(repository: repository)
+    }
 }

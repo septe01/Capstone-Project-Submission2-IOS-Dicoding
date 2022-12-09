@@ -29,6 +29,11 @@
 		B3BB470D2942B4A800720A82 /* CategoryRemoteDataSourece.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB470C2942B4A800720A82 /* CategoryRemoteDataSourece.swift */; };
 		B3BB47152943123200720A82 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB47142943123200720A82 /* CategoryRepository.swift */; };
 		B3BB47192943182500720A82 /* CategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB47182943182500720A82 /* CategoryMapper.swift */; };
+		B3BB471C29431CBA00720A82 /* CategoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB471B29431CBA00720A82 /* CategoryInteractor.swift */; };
+		B3BB471F294321AA00720A82 /* FoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB471E294321AA00720A82 /* FoodPresenter.swift */; };
+		B3BB473B2943689800720A82 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB473A2943689800720A82 /* Color+Ext.swift */; };
+		B3BB473E2943696600720A82 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B3BB473D2943696600720A82 /* SDWebImageSwiftUI */; };
+		B3BB47402943698800720A82 /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB473F2943698800720A82 /* FoodRow.swift */; };
 		B3E794302940CB69005EAB73 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7942F2940CB69005EAB73 /* APICall.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +60,10 @@
 		B3BB470C2942B4A800720A82 /* CategoryRemoteDataSourece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRemoteDataSourece.swift; sourceTree = "<group>"; };
 		B3BB47142943123200720A82 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
 		B3BB47182943182500720A82 /* CategoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMapper.swift; sourceTree = "<group>"; };
+		B3BB471B29431CBA00720A82 /* CategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInteractor.swift; sourceTree = "<group>"; };
+		B3BB471E294321AA00720A82 /* FoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPresenter.swift; sourceTree = "<group>"; };
+		B3BB473A2943689800720A82 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		B3BB473F2943698800720A82 /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
 		B3E7942F2940CB69005EAB73 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		B3E794312940CCB1005EAB73 /* Capstone-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Capstone-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -64,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3BB473E2943696600720A82 /* SDWebImageSwiftUI in Frameworks */,
 				B3405DF42941548C006734A5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				B3405DFA29415781006734A5 /* CustomeError+Ext.swift */,
+				B3BB473A2943689800720A82 /* Color+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,6 +248,7 @@
 		B3405E062941688E006734A5 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				B3BB471A29431CAA00720A82 /* Category */,
 				B3405E07294168A1006734A5 /* Profile */,
 			);
 			path = UseCase;
@@ -294,6 +306,7 @@
 		B3423B6029401AE100D5C381 /* Food */ = {
 			isa = PBXGroup;
 			children = (
+				B3BB471D2943219A00720A82 /* Presenter */,
 				B3423B6129401AE800D5C381 /* View */,
 			);
 			path = Food;
@@ -303,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				B3423B6229401AF300D5C381 /* FoodsView.swift */,
+				B3BB473F2943698800720A82 /* FoodRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,6 +379,22 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		B3BB471A29431CAA00720A82 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB471B29431CBA00720A82 /* CategoryInteractor.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B3BB471D2943219A00720A82 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB471E294321AA00720A82 /* FoodPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		B3E7942D2940CAE9005EAB73 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +430,7 @@
 			name = "Capstone Project";
 			packageProductDependencies = (
 				B3405DF32941548C006734A5 /* Alamofire */,
+				B3BB473D2943696600720A82 /* SDWebImageSwiftUI */,
 			);
 			productName = "Capstone Project";
 			productReference = B33BDC2B293EC1260043C2DB /* Capstone Project.app */;
@@ -431,6 +462,7 @@
 			mainGroup = B33BDC22293EC1260043C2DB;
 			packageReferences = (
 				B3405DF22941548C006734A5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B3BB473C2943696600720A82 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = B33BDC2C293EC1260043C2DB /* Products */;
 			projectDirPath = "";
@@ -488,13 +520,17 @@
 				B3BB470B2942B14200720A82 /* CategoryModel.swift in Sources */,
 				B3BB470D2942B4A800720A82 /* CategoryRemoteDataSourece.swift in Sources */,
 				B3E794302940CB69005EAB73 /* APICall.swift in Sources */,
+				B3BB471F294321AA00720A82 /* FoodPresenter.swift in Sources */,
 				B3BB47192943182500720A82 /* CategoryMapper.swift in Sources */,
 				B3BB47072942AFCA00720A82 /* CategoriesResponse.swift in Sources */,
 				B3423B5D2940196700D5C381 /* FavoriteView.swift in Sources */,
 				B3BB47152943123200720A82 /* CategoryRepository.swift in Sources */,
 				B3405DFB29415781006734A5 /* CustomeError+Ext.swift in Sources */,
+				B3BB47402943698800720A82 /* FoodRow.swift in Sources */,
+				B3BB471C29431CBA00720A82 /* CategoryInteractor.swift in Sources */,
 				B3405E0E29416AAA006734A5 /* ProfilePresenter.swift in Sources */,
 				B3423B6329401AF300D5C381 /* FoodsView.swift in Sources */,
+				B3BB473B2943689800720A82 /* Color+Ext.swift in Sources */,
 				B3405DFE29415B0E006734A5 /* ProfileMapper.swift in Sources */,
 				B3405DED29415336006734A5 /* ProfileRepository.swift in Sources */,
 				B33BDC2F293EC1260043C2DB /* Capstone_ProjectApp.swift in Sources */,
@@ -710,6 +746,14 @@
 				kind = branch;
 			};
 		};
+		B3BB473C2943696600720A82 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -717,6 +761,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B3405DF22941548C006734A5 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		B3BB473D2943696600720A82 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3BB473C2943696600720A82 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

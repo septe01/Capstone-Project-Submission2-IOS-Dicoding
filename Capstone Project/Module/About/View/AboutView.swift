@@ -33,6 +33,7 @@ struct AboutView: View {
                                     } placeholder: {
                                         ProgressView()
                                             .progressViewStyle(CircularProgressViewStyle(tint: Color("ColorGreyDark")))
+                                            .frame(width: 100, height: 100)
 
                                     }
                                 }
@@ -103,8 +104,10 @@ struct ButtonView: View {
     }
 }
 
-//struct AboutView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AboutView()
-//    }
-//}
+struct AboutView_Previews: PreviewProvider {
+    static let profilePresenter = ProfilePresenter(profileUseCase: Injection.init().provideProfile())
+    
+    static var previews: some View {
+        AboutView().environmentObject(profilePresenter)
+    }
+}
