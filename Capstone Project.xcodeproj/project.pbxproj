@@ -27,7 +27,8 @@
 		B3BB47072942AFCA00720A82 /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB47062942AFCA00720A82 /* CategoriesResponse.swift */; };
 		B3BB470B2942B14200720A82 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB470A2942B14200720A82 /* CategoryModel.swift */; };
 		B3BB470D2942B4A800720A82 /* CategoryRemoteDataSourece.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB470C2942B4A800720A82 /* CategoryRemoteDataSourece.swift */; };
-		B3BB471229430F0A00720A82 /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB471129430F0A00720A82 /* FoodRepository.swift */; };
+		B3BB47152943123200720A82 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB47142943123200720A82 /* CategoryRepository.swift */; };
+		B3BB47192943182500720A82 /* CategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB47182943182500720A82 /* CategoryMapper.swift */; };
 		B3E794302940CB69005EAB73 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7942F2940CB69005EAB73 /* APICall.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +53,8 @@
 		B3BB47062942AFCA00720A82 /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
 		B3BB470A2942B14200720A82 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		B3BB470C2942B4A800720A82 /* CategoryRemoteDataSourece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRemoteDataSourece.swift; sourceTree = "<group>"; };
-		B3BB471129430F0A00720A82 /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
+		B3BB47142943123200720A82 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		B3BB47182943182500720A82 /* CategoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMapper.swift; sourceTree = "<group>"; };
 		B3E7942F2940CB69005EAB73 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		B3E794312940CCB1005EAB73 /* Capstone-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Capstone-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -226,7 +228,8 @@
 		B3405DFC29415AF4006734A5 /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
-				B3405DFD29415B0E006734A5 /* ProfileMapper.swift */,
+				B3BB47172943180A00720A82 /* Profile */,
+				B3BB4716294317FC00720A82 /* Category */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -324,7 +327,7 @@
 		B3BB470E29430E8700720A82 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				B3BB471029430EB600720A82 /* Food */,
+				B3BB47132943121A00720A82 /* CategoryRepository */,
 				B3BB470F29430EA300720A82 /* Profile */,
 			);
 			path = Repository;
@@ -338,12 +341,28 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		B3BB471029430EB600720A82 /* Food */ = {
+		B3BB47132943121A00720A82 /* CategoryRepository */ = {
 			isa = PBXGroup;
 			children = (
-				B3BB471129430F0A00720A82 /* FoodRepository.swift */,
+				B3BB47142943123200720A82 /* CategoryRepository.swift */,
 			);
-			path = Food;
+			path = CategoryRepository;
+			sourceTree = "<group>";
+		};
+		B3BB4716294317FC00720A82 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB47182943182500720A82 /* CategoryMapper.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B3BB47172943180A00720A82 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B3405DFD29415B0E006734A5 /* ProfileMapper.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		B3E7942D2940CAE9005EAB73 /* View */ = {
@@ -462,7 +481,6 @@
 				B3405E052941674C006734A5 /* Injection.swift in Sources */,
 				B3423B5729400EFF00D5C381 /* AboutView.swift in Sources */,
 				B3405E0B294168E0006734A5 /* ProfileInteractor.swift in Sources */,
-				B3BB471229430F0A00720A82 /* FoodRepository.swift in Sources */,
 				B3405DF629415591006734A5 /* ProfileResponse.swift in Sources */,
 				B3405DE829414994006734A5 /* ProfileModel.swift in Sources */,
 				B3405DF12941543E006734A5 /* ProfileDataSource.swift in Sources */,
@@ -470,8 +488,10 @@
 				B3BB470B2942B14200720A82 /* CategoryModel.swift in Sources */,
 				B3BB470D2942B4A800720A82 /* CategoryRemoteDataSourece.swift in Sources */,
 				B3E794302940CB69005EAB73 /* APICall.swift in Sources */,
+				B3BB47192943182500720A82 /* CategoryMapper.swift in Sources */,
 				B3BB47072942AFCA00720A82 /* CategoriesResponse.swift in Sources */,
 				B3423B5D2940196700D5C381 /* FavoriteView.swift in Sources */,
+				B3BB47152943123200720A82 /* CategoryRepository.swift in Sources */,
 				B3405DFB29415781006734A5 /* CustomeError+Ext.swift in Sources */,
 				B3405E0E29416AAA006734A5 /* ProfilePresenter.swift in Sources */,
 				B3423B6329401AF300D5C381 /* FoodsView.swift in Sources */,
