@@ -20,6 +20,12 @@ final class Injection: NSObject {
         return CategoryInteractor(repository: repository)
     }
 
+    // method inject detail category
+    func provideDetailCategory(category: CategoryModel) -> CategoryDetailUseCase {
+        let repository = provideRepositoryCategory()
+        return CategoryDetailInteractor(repository: repository, category: category)
+    }
+
 }
 
 extension Injection {

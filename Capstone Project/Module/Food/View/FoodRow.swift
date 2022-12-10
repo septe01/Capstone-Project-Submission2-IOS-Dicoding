@@ -65,7 +65,9 @@ struct FoodRow_Previews: PreviewProvider {
             id: "1",
             title: "Meat Max Pizza",
             image: "https://imgur.com/U9eNM7y.png",
-            description: "Dengan Jamur, Baked Beans, Beef Rashers, Telur, Saus Tomat dan Cream Mayo, serta Sosis Ayam di pinggirannya"
+            description: "Dengan Jamur, Baked Beans, Beef Rashers, Telur, Saus Tomat dan Cream Mayo, serta Sosis Ayam di pinggirannya",
+            isFavorite: false
+
         )
         return FoodRow(category: food)
     }

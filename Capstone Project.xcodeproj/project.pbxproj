@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31BD2612943F5BE00811C56 /* CategoryDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD2602943F5BE00811C56 /* CategoryDetailInteractor.swift */; };
+		B31BD2652943F86A00811C56 /* FoodRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD2642943F86A00811C56 /* FoodRoute.swift */; };
+		B31BD2672943F9B400811C56 /* FoodDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD2662943F9B400811C56 /* FoodDetailPresenter.swift */; };
+		B31BD2692943FB5B00811C56 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD2682943FB5B00811C56 /* FoodDetailView.swift */; };
 		B33BDC2F293EC1260043C2DB /* Capstone_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BDC2E293EC1260043C2DB /* Capstone_ProjectApp.swift */; };
 		B33BDC33293EC1270043C2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33BDC32293EC1270043C2DB /* Assets.xcassets */; };
 		B33BDC36293EC1270043C2DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33BDC35293EC1270043C2DB /* Preview Assets.xcassets */; };
@@ -38,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B31BD2602943F5BE00811C56 /* CategoryDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailInteractor.swift; sourceTree = "<group>"; };
+		B31BD2642943F86A00811C56 /* FoodRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRoute.swift; sourceTree = "<group>"; };
+		B31BD2662943F9B400811C56 /* FoodDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailPresenter.swift; sourceTree = "<group>"; };
+		B31BD2682943FB5B00811C56 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
 		B33BDC2B293EC1260043C2DB /* Capstone Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capstone Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33BDC2E293EC1260043C2DB /* Capstone_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectApp.swift; sourceTree = "<group>"; };
 		B33BDC32293EC1270043C2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +89,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B31BD25B2943F3F500811C56 /* DetailFood */ = {
+			isa = PBXGroup;
+			children = (
+				B31BD25D2943F41800811C56 /* View */,
+				B31BD25C2943F40F00811C56 /* Presenter */,
+			);
+			path = DetailFood;
+			sourceTree = "<group>";
+		};
+		B31BD25C2943F40F00811C56 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B31BD2662943F9B400811C56 /* FoodDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B31BD25D2943F41800811C56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B31BD2682943FB5B00811C56 /* FoodDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B31BD2632943F84B00811C56 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				B31BD2642943F86A00811C56 /* FoodRoute.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
 		B33BDC22293EC1260043C2DB = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +170,7 @@
 		B33BDC41293ED2E40043C2DB /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				B31BD25B2943F3F500811C56 /* DetailFood */,
 				B3423B6029401AE100D5C381 /* Food */,
 				B3423B5A2940195200D5C381 /* Favorite */,
 				B3423B5329400E5800D5C381 /* About */,
@@ -306,6 +348,7 @@
 		B3423B6029401AE100D5C381 /* Food */ = {
 			isa = PBXGroup;
 			children = (
+				B31BD2632943F84B00811C56 /* Route */,
 				B3BB471D2943219A00720A82 /* Presenter */,
 				B3423B6129401AE800D5C381 /* View */,
 			);
@@ -383,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				B3BB471B29431CBA00720A82 /* CategoryInteractor.swift */,
+				B31BD2602943F5BE00811C56 /* CategoryDetailInteractor.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -515,6 +559,7 @@
 				B3405E0B294168E0006734A5 /* ProfileInteractor.swift in Sources */,
 				B3405DF629415591006734A5 /* ProfileResponse.swift in Sources */,
 				B3405DE829414994006734A5 /* ProfileModel.swift in Sources */,
+				B31BD2612943F5BE00811C56 /* CategoryDetailInteractor.swift in Sources */,
 				B3405DF12941543E006734A5 /* ProfileDataSource.swift in Sources */,
 				B3423B592940188300D5C381 /* BottomTabBar.swift in Sources */,
 				B3BB470B2942B14200720A82 /* CategoryModel.swift in Sources */,
@@ -530,8 +575,11 @@
 				B3BB471C29431CBA00720A82 /* CategoryInteractor.swift in Sources */,
 				B3405E0E29416AAA006734A5 /* ProfilePresenter.swift in Sources */,
 				B3423B6329401AF300D5C381 /* FoodsView.swift in Sources */,
+				B31BD2652943F86A00811C56 /* FoodRoute.swift in Sources */,
+				B31BD2672943F9B400811C56 /* FoodDetailPresenter.swift in Sources */,
 				B3BB473B2943689800720A82 /* Color+Ext.swift in Sources */,
 				B3405DFE29415B0E006734A5 /* ProfileMapper.swift in Sources */,
+				B31BD2692943FB5B00811C56 /* FoodDetailView.swift in Sources */,
 				B3405DED29415336006734A5 /* ProfileRepository.swift in Sources */,
 				B33BDC2F293EC1260043C2DB /* Capstone_ProjectApp.swift in Sources */,
 			);

@@ -5,13 +5,14 @@
 //  Created by septe habudin on 09/12/22.
 //
 
-import Foundation
+import SwiftUI
 import Combine
 
 class FoodPresenter: ObservableObject {
     private var cancellable: Set<AnyCancellable> = []
 
     private let categoryUseCase: CategoryUseCase
+    private let router = FoodRoute()
 
     @Published var categories: [CategoryModel] = []
     @Published var errorMessage: String = ""
@@ -36,5 +37,13 @@ class FoodPresenter: ObservableObject {
                 self.categories = categories
             }
             .store(in: &cancellable)
+    }
+
+    func linkBuilder<Content: View>(
+        for category: CategoryModel,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        NavigationLink(
+            destination: router.makeDetailView(for: category)) { content() }
     }
 }

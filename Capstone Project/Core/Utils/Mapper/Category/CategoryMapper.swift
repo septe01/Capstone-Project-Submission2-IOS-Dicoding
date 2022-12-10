@@ -19,7 +19,8 @@ final class CategoryMapper {
                 id: result.id,
                 title: result.title,
                 image: result.image,
-                description: result.description
+                description: result.description,
+                isFavorite: result.isFavorite ?? false
             )
         }
     }

@@ -24,7 +24,11 @@ struct FoodsView: View {
                 id: \.id
               ) { category in
                 ZStack {
-                    FoodRow(category: category)
+
+                    self.foodPresenter.linkBuilder(for: category) {
+                        FoodRow(category: category)
+                    }.buttonStyle(PlainButtonStyle())
+
                 }.padding(8)
               }
             }
