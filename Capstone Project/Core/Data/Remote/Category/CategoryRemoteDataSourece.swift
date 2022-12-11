@@ -21,7 +21,7 @@ final class CategoryRemoteDataSource: NSObject {
 
 extension CategoryRemoteDataSource: CategoryRemoteDataSourceProtocol {
     func getCategories() -> AnyPublisher<[CategoryResponse], Error> {
-        return Future<[CategoryResponse],Error> { completion in
+        return Future<[CategoryResponse], Error> { completion in
             if let url = URL(string: Endpoints.Gets.category.url) {
                 AF.request(url)
                     .validate()

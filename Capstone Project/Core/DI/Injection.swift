@@ -6,13 +6,17 @@
 //
 
 import Foundation
+import RealmSwift
 
 final class Injection: NSObject {
 
     private func provideRepositoryCategory() -> CategoryRepositoryProtocol {
-        let remote: CategoryRemoteDataSource = CategoryRemoteDataSource.sharedInstance
+        let realm = try? Realm()
 
-        return CategoryRepository.sharedInstance(remote)
+        let remote: CategoryRemoteDataSource = CategoryRemoteDataSource.sharedInstance
+        let local: CategoryLocalDataSource = CategoryLocalDataSource.sharedInstance(realm)
+
+        return CategoryRepository.sharedInstance(remote, local)
     }
 
     func provideCategory() -> CategoryUseCase {
