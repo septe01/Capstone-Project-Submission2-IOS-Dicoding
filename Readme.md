@@ -8,7 +8,10 @@
 
 ## Features
 
--
+- About
+- Favorite
+- List Foods
+- Detail Foods
 
 ## Tech
 
