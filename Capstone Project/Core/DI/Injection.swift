@@ -30,6 +30,11 @@ final class Injection: NSObject {
         return CategoryDetailInteractor(repository: repository, category: category)
     }
 
+    func provideFavoriteCategory(category: CategoryModel) -> CategoryUseCase {
+        let repository = provideRepositoryCategory()
+        return CategoryInteractor(repository: repository)
+    }
+
 }
 
 extension Injection {

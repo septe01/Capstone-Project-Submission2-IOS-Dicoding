@@ -19,7 +19,6 @@ final class CategoryMapper {
             newCategory.title = result.title
             newCategory.image = result.image
             newCategory.desc = result.description
-            newCategory.isFavorite = result.isFavorite ?? false
 
             return newCategory
         }
@@ -34,8 +33,7 @@ final class CategoryMapper {
                 id: result.id,
                 title: result.title,
                 image: result.image,
-                description: result.desc,
-                isFavorite: result.isFavorite
+                description: result.desc
             )
         }
     }
@@ -50,8 +48,7 @@ final class CategoryMapper {
                 id: result.id,
                 title: result.title,
                 image: result.image,
-                description: result.description,
-                isFavorite: result.isFavorite ?? false
+                description: result.description
             )
         }
     }

@@ -22,26 +22,27 @@ struct FoodRow: View {
 }
 
 extension FoodRow {
-
+    
     var imageCategory: some View {
-            WebImage(url: URL(string: category.image))
-                .resizable()
-                .indicator(.activity)
-                .transition(.fade(duration: 0.5))
-                .scaledToFit()
-                .frame(width: 200)
-                .cornerRadius(30)
-                .padding(.top)
-                .frame(width: UIScreen.main.bounds.width - 32)
+        WebImage(url: URL(string: category.image))
+            .resizable()
+            .indicator(.activity)
+            .transition(.fade(duration: 0.5))
+            .scaledToFit()
+            .frame(width: 200)
+            .cornerRadius(30)
+            .padding(.top)
+            .frame(width: UIScreen.main.bounds.width - 32)
     }
-
+    
     var content: some View {
         VStack{
             VStack(alignment: .leading, spacing: 10) {
+                
                 Text(category.title)
                     .font(.title)
                     .bold()
-
+                
                 Text(category.description)
                     .font(.system(size: 14))
                     .lineLimit(2)
@@ -54,9 +55,9 @@ extension FoodRow {
                 )
             )
         }
-
+        
     }
-
+    
 }
 
 struct FoodRow_Previews: PreviewProvider {
@@ -65,9 +66,8 @@ struct FoodRow_Previews: PreviewProvider {
             id: "1",
             title: "Meat Max Pizza",
             image: "https://imgur.com/U9eNM7y.png",
-            description: "Dengan Jamur, Baked Beans, Beef Rashers, Telur, Saus Tomat dan Cream Mayo, serta Sosis Ayam di pinggirannya",
-            isFavorite: false
-
+            description: "Dengan Jamur, Baked Beans, Beef Rashers, Telur, Saus Tomat dan Cream Mayo, serta Sosis Ayam di pinggirannya"
+            
         )
         return FoodRow(category: food)
     }

@@ -13,5 +13,4 @@ struct CategoryModel: Equatable, Identifiable {
     let title: String
     let image: String
     let description: String
-    let isFavorite: Bool?
 }

@@ -10,6 +10,8 @@ import Combine
 
 protocol CategoryRepositoryProtocol {
     func getCategories() -> AnyPublisher<[CategoryModel], Error>
+    func addFavorite(category: CategoryModel) -> AnyPublisher<Bool, Error>
+    func delFavorite(category: CategoryModel) -> AnyPublisher<Bool, Error>
 }
 
 
@@ -33,6 +35,7 @@ final class CategoryRepository: NSObject {
 
 
 extension CategoryRepository: CategoryRepositoryProtocol {
+
     // manipulation data source
     func getCategories() -> AnyPublisher<[CategoryModel], Error> {
         return local.getCategories()
@@ -63,4 +66,13 @@ extension CategoryRepository: CategoryRepositoryProtocol {
         //            .map { CategoryMapper.mapCategoryResponseToDomains(input: $0) }
         //            .eraseToAnyPublisher()
     }
+
+    func addFavorite(category: CategoryModel) -> AnyPublisher<Bool, Error> {
+        return self.local.addFavoriteCategory(from: category)
+    }
+
+    func delFavorite(category: CategoryModel) -> AnyPublisher<Bool, Error> {
+        return self.local.delFavoriteCategory(from: category)
+    }
+
 }

@@ -13,8 +13,7 @@ class CategoryEntity: Object {
     @objc dynamic var title: String = ""
     @objc dynamic var image: String = ""
     @objc dynamic var desc: String = ""
-    dynamic var isFavorite: Bool? = false
-
+    
     override static func primaryKey() -> String? {
         return "id"
     }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 protocol CategoryDetailUseCase {
     func getCategory() -> CategoryModel
@@ -13,6 +14,8 @@ protocol CategoryDetailUseCase {
 
 // create interactor detail
 class CategoryDetailInteractor: CategoryDetailUseCase {
+
+
     private let repository: CategoryRepositoryProtocol
     private let category: CategoryModel
 
@@ -27,4 +30,5 @@ class CategoryDetailInteractor: CategoryDetailUseCase {
     func getCategory() -> CategoryModel {
         return category
     }
+
 }

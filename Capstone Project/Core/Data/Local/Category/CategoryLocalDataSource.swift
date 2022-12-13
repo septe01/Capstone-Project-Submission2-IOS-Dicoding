@@ -13,6 +13,8 @@ import Combine
 protocol CategoryLocalDataSourceProtocol: class {
     func getCategories() -> AnyPublisher<[CategoryEntity], Error>
     func addCategories(from categories: [CategoryEntity]) -> AnyPublisher<Bool, Error>
+    func addFavoriteCategory(from category: CategoryModel) -> AnyPublisher<Bool, Error>
+    func delFavoriteCategory(from category: CategoryModel) -> AnyPublisher<Bool, Error>
 }
 
 
@@ -62,6 +64,53 @@ extension CategoryLocalDataSource: CategoryLocalDataSourceProtocol{
                             realm.add(category, update: .all)
                         }
                         completion(.success(true))
+                    }
+                } catch {
+                    completion(.failure(DatabaseError.requestFailed))
+                }
+            } else {
+                completion(.failure(DatabaseError.invalidInstance))
+            }
+        }.eraseToAnyPublisher()
+    }
+
+    // add category favorite
+    func addFavoriteCategory(
+        from category: CategoryModel
+    ) -> AnyPublisher<Bool, Error> {
+        return Future<Bool, Error> { completion in
+            if let realm = self.realm {
+                do {
+                    let favorite = FavoriteCategoryEntity(value: [
+                        "id": category.id,
+                        "title": category.title,
+                        "image": category.image,
+                        "desc": category.description,
+                        "isFavorite": "1"
+                    ])
+                    try realm.write{
+                        realm.add(favorite)
+                        completion(.success(true))
+                    }
+                } catch {
+                    completion(.failure(DatabaseError.requestFailed))
+                }
+            } else {
+                completion(.failure(DatabaseError.invalidInstance))
+            }
+        }.eraseToAnyPublisher()
+    }
+
+    func delFavoriteCategory(from category: CategoryModel) -> AnyPublisher<Bool, Error> {
+        return Future<Bool, Error> { completion in
+            if let realm = self.realm {
+                do {
+                    try realm.write{
+                        let favoriteCategory = realm.objects(FavoriteCategoryEntity.self).where {
+                            $0.id == category.id
+                        }
+                        realm.delete(favoriteCategory)
+                        completion(.success(false))
                     }
                 } catch {
                     completion(.failure(DatabaseError.requestFailed))

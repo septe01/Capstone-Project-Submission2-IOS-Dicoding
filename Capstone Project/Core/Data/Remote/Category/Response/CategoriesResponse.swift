@@ -19,7 +19,6 @@ struct CategoryResponse: Decodable {
     let title: String
     let image: String
     let description: String
-    let isFavorite: Bool?
 
     // change property
     private enum CodingKeys: String, CodingKey {
@@ -27,6 +26,5 @@ struct CategoryResponse: Decodable {
         case title = "strCategory"
         case image = "strCategoryThumb"
         case description = "strCategoryDescription"
-        case isFavorite = "favorite"
     }
 }

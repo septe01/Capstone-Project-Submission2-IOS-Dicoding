@@ -32,6 +32,8 @@
 		B373D5152945432B003894B7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B373D5142945432B003894B7 /* RealmSwift */; };
 		B373D519294543EC003894B7 /* CategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373D518294543EC003894B7 /* CategoryEntity.swift */; };
 		B373D51C2945457B003894B7 /* CategoryLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373D51B2945457B003894B7 /* CategoryLocalDataSource.swift */; };
+		B39AD71F29475CF8008AF6B7 /* FavoriteCategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39AD71E29475CF8008AF6B7 /* FavoriteCategoryEntity.swift */; };
+		B39AD72129475EB3008AF6B7 /* FavoriteCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39AD72029475EB3008AF6B7 /* FavoriteCategoryModel.swift */; };
 		B3BB47072942AFCA00720A82 /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB47062942AFCA00720A82 /* CategoriesResponse.swift */; };
 		B3BB470B2942B14200720A82 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB470A2942B14200720A82 /* CategoryModel.swift */; };
 		B3BB470D2942B4A800720A82 /* CategoryRemoteDataSourece.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB470C2942B4A800720A82 /* CategoryRemoteDataSourece.swift */; };
@@ -69,6 +71,8 @@
 		B3423B6229401AF300D5C381 /* FoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsView.swift; sourceTree = "<group>"; };
 		B373D518294543EC003894B7 /* CategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntity.swift; sourceTree = "<group>"; };
 		B373D51B2945457B003894B7 /* CategoryLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryLocalDataSource.swift; sourceTree = "<group>"; };
+		B39AD71E29475CF8008AF6B7 /* FavoriteCategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCategoryEntity.swift; sourceTree = "<group>"; };
+		B39AD72029475EB3008AF6B7 /* FavoriteCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCategoryModel.swift; sourceTree = "<group>"; };
 		B3BB47062942AFCA00720A82 /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
 		B3BB470A2942B14200720A82 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		B3BB470C2942B4A800720A82 /* CategoryRemoteDataSourece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRemoteDataSourece.swift; sourceTree = "<group>"; };
@@ -248,6 +252,7 @@
 			children = (
 				B3405DE729414994006734A5 /* ProfileModel.swift */,
 				B3BB470A2942B14200720A82 /* CategoryModel.swift */,
+				B39AD72029475EB3008AF6B7 /* FavoriteCategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				B373D518294543EC003894B7 /* CategoryEntity.swift */,
+				B39AD71E29475CF8008AF6B7 /* FavoriteCategoryEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -596,6 +602,7 @@
 				B3423B5729400EFF00D5C381 /* AboutView.swift in Sources */,
 				B3405E0B294168E0006734A5 /* ProfileInteractor.swift in Sources */,
 				B3405DF629415591006734A5 /* ProfileResponse.swift in Sources */,
+				B39AD72129475EB3008AF6B7 /* FavoriteCategoryModel.swift in Sources */,
 				B3405DE829414994006734A5 /* ProfileModel.swift in Sources */,
 				B31BD2612943F5BE00811C56 /* CategoryDetailInteractor.swift in Sources */,
 				B3405DF12941543E006734A5 /* ProfileDataSource.swift in Sources */,
@@ -614,6 +621,7 @@
 				B3405E0E29416AAA006734A5 /* ProfilePresenter.swift in Sources */,
 				B3423B6329401AF300D5C381 /* FoodsView.swift in Sources */,
 				B373D51C2945457B003894B7 /* CategoryLocalDataSource.swift in Sources */,
+				B39AD71F29475CF8008AF6B7 /* FavoriteCategoryEntity.swift in Sources */,
 				B31BD2652943F86A00811C56 /* FoodRoute.swift in Sources */,
 				B31BD2672943F9B400811C56 /* FoodDetailPresenter.swift in Sources */,
 				B3BB473B2943689800720A82 /* Color+Ext.swift in Sources */,
