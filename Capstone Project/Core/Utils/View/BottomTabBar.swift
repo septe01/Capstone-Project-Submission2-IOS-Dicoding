@@ -11,6 +11,7 @@ struct BottomTabBar: View {
     @State var selection = 1
 
     let foodPresenter = FoodPresenter(categoryUseCase: Injection.init().provideCategory())
+    let favoritePresenter = FavoritePresenter(favoriteUseCase: Injection.init().provideFavorite())
     let profilePresenter = ProfilePresenter(profileUseCase: Injection.init().provideProfile())
 
     var body: some View {
@@ -31,6 +32,7 @@ struct BottomTabBar: View {
                 Label("Favorite", systemImage: "heart.fill")
             }
             .tag(2)
+            .environmentObject(favoritePresenter)
 
             AboutView()
                 .tabItem {

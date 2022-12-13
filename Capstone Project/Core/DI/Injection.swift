@@ -50,3 +50,19 @@ extension Injection {
       return ProfileInteractor(repository: repository)
     }
 }
+
+extension Injection {
+
+    private func provideRepositoryFavorite() -> FavoriteRepositoryProtocol {
+        let realm = try? Realm()
+
+        let favoriteLocal: FavoriteLocalDataSource = FavoriteLocalDataSource.sharedInstance(realm)
+
+        return FavoriteRepository.sharedInstance(favoriteLocal)
+    }
+
+    func provideFavorite() -> FavoriteUseCase {
+      let repository = provideRepositoryFavorite()
+      return FavoriteInteractor(repository: repository)
+    }
+}

@@ -34,6 +34,12 @@
 		B373D51C2945457B003894B7 /* CategoryLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373D51B2945457B003894B7 /* CategoryLocalDataSource.swift */; };
 		B39AD71F29475CF8008AF6B7 /* FavoriteCategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39AD71E29475CF8008AF6B7 /* FavoriteCategoryEntity.swift */; };
 		B39AD72129475EB3008AF6B7 /* FavoriteCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39AD72029475EB3008AF6B7 /* FavoriteCategoryModel.swift */; };
+		B3B68EE729487C540038E136 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B68EE629487C540038E136 /* FavoritePresenter.swift */; };
+		B3B68EE929487C660038E136 /* FavoriteRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B68EE829487C660038E136 /* FavoriteRoute.swift */; };
+		B3B68EEC29487DA10038E136 /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B68EEB29487DA10038E136 /* FavoriteInteractor.swift */; };
+		B3B68EF029487EE10038E136 /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B68EEF29487EE10038E136 /* FavoriteRepository.swift */; };
+		B3B68EF429487F420038E136 /* FavoriteLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B68EF329487F420038E136 /* FavoriteLocalDataSource.swift */; };
+		B3B68EF7294886390038E136 /* FavoriteMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B68EF6294886390038E136 /* FavoriteMapper.swift */; };
 		B3BB47072942AFCA00720A82 /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB47062942AFCA00720A82 /* CategoriesResponse.swift */; };
 		B3BB470B2942B14200720A82 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB470A2942B14200720A82 /* CategoryModel.swift */; };
 		B3BB470D2942B4A800720A82 /* CategoryRemoteDataSourece.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB470C2942B4A800720A82 /* CategoryRemoteDataSourece.swift */; };
@@ -73,6 +79,12 @@
 		B373D51B2945457B003894B7 /* CategoryLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryLocalDataSource.swift; sourceTree = "<group>"; };
 		B39AD71E29475CF8008AF6B7 /* FavoriteCategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCategoryEntity.swift; sourceTree = "<group>"; };
 		B39AD72029475EB3008AF6B7 /* FavoriteCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCategoryModel.swift; sourceTree = "<group>"; };
+		B3B68EE629487C540038E136 /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		B3B68EE829487C660038E136 /* FavoriteRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRoute.swift; sourceTree = "<group>"; };
+		B3B68EEB29487DA10038E136 /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
+		B3B68EEF29487EE10038E136 /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
+		B3B68EF329487F420038E136 /* FavoriteLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLocalDataSource.swift; sourceTree = "<group>"; };
+		B3B68EF6294886390038E136 /* FavoriteMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMapper.swift; sourceTree = "<group>"; };
 		B3BB47062942AFCA00720A82 /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
 		B3BB470A2942B14200720A82 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		B3BB470C2942B4A800720A82 /* CategoryRemoteDataSourece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRemoteDataSourece.swift; sourceTree = "<group>"; };
@@ -295,6 +307,7 @@
 		B3405DFC29415AF4006734A5 /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				B3B68EF5294886290038E136 /* Favorite */,
 				B3BB47172943180A00720A82 /* Profile */,
 				B3BB4716294317FC00720A82 /* Category */,
 			);
@@ -304,6 +317,7 @@
 		B3405E062941688E006734A5 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				B3B68EEA29487D6F0038E136 /* Favorite */,
 				B3BB471A29431CAA00720A82 /* Category */,
 				B3405E07294168A1006734A5 /* Profile */,
 			);
@@ -346,6 +360,8 @@
 		B3423B5A2940195200D5C381 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				B3B68EE529487C050038E136 /* Route */,
+				B3B68EE429487BE50038E136 /* Presenter */,
 				B3423B5B2940195F00D5C381 /* View */,
 			);
 			path = Favorite;
@@ -381,6 +397,7 @@
 		B373D516294543C4003894B7 /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				B3B68EF129487EFC0038E136 /* Favorite */,
 				B373D51A2945451F003894B7 /* Category */,
 			);
 			path = Local;
@@ -404,6 +421,54 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		B3B68EE429487BE50038E136 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3B68EE629487C540038E136 /* FavoritePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B3B68EE529487C050038E136 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				B3B68EE829487C660038E136 /* FavoriteRoute.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		B3B68EEA29487D6F0038E136 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B3B68EEB29487DA10038E136 /* FavoriteInteractor.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B3B68EED29487EAA0038E136 /* FavoriteRepository */ = {
+			isa = PBXGroup;
+			children = (
+				B3B68EEF29487EE10038E136 /* FavoriteRepository.swift */,
+			);
+			path = FavoriteRepository;
+			sourceTree = "<group>";
+		};
+		B3B68EF129487EFC0038E136 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B3B68EF329487F420038E136 /* FavoriteLocalDataSource.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B3B68EF5294886290038E136 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B3B68EF6294886390038E136 /* FavoriteMapper.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
 		B3BB47042942AEAC00720A82 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +489,7 @@
 		B3BB470E29430E8700720A82 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				B3B68EED29487EAA0038E136 /* FavoriteRepository */,
 				B3BB47132943121A00720A82 /* CategoryRepository */,
 				B3BB470F29430EA300720A82 /* Profile */,
 			);
@@ -604,8 +670,14 @@
 				B3405DF629415591006734A5 /* ProfileResponse.swift in Sources */,
 				B39AD72129475EB3008AF6B7 /* FavoriteCategoryModel.swift in Sources */,
 				B3405DE829414994006734A5 /* ProfileModel.swift in Sources */,
+				B3B68EE929487C660038E136 /* FavoriteRoute.swift in Sources */,
 				B31BD2612943F5BE00811C56 /* CategoryDetailInteractor.swift in Sources */,
 				B3405DF12941543E006734A5 /* ProfileDataSource.swift in Sources */,
+				B3B68EF7294886390038E136 /* FavoriteMapper.swift in Sources */,
+				B3B68EE729487C540038E136 /* FavoritePresenter.swift in Sources */,
+				B3B68EF029487EE10038E136 /* FavoriteRepository.swift in Sources */,
+				B3B68EEC29487DA10038E136 /* FavoriteInteractor.swift in Sources */,
+				B3B68EF429487F420038E136 /* FavoriteLocalDataSource.swift in Sources */,
 				B3423B592940188300D5C381 /* BottomTabBar.swift in Sources */,
 				B3BB470B2942B14200720A82 /* CategoryModel.swift in Sources */,
 				B3BB470D2942B4A800720A82 /* CategoryRemoteDataSourece.swift in Sources */,
