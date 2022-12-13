@@ -108,6 +108,6 @@ struct FoodDetailView_Previews: PreviewProvider {
         
         FoodDetailView(presenter: FoodDetailPresenter(
             categoryDetailUseCase: Injection.init().provideDetailCategory(category: food),
-            categoryUseCase:  Injection.init().provideFavoriteCategory(category: food) ))
+            categoryUseCase: Injection.init().provideFavoriteCategory(category: food) ))
     }
 }

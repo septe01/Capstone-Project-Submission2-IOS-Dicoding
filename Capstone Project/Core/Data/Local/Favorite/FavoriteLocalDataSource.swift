@@ -37,4 +37,3 @@ extension FavoriteLocalDataSource: FavoriteLocalDataSourceProtocol {
         }.eraseToAnyPublisher()
     }
 }
-
