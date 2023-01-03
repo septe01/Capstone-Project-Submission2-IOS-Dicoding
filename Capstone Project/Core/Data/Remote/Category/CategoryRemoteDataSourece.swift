@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import Combine
 
-protocol CategoryRemoteDataSourceProtocol: class {
+protocol CategoryRemoteDataSourceProtocol {
     func getCategories() -> AnyPublisher<[CategoryResponse], Error>
 }
 

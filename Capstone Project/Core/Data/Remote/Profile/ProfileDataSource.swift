@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import Combine
 
-protocol ProfileDataSourceProtocol: class {
+protocol ProfileDataSourceProtocol {
 
     func getProfiles() -> AnyPublisher<ProfileResponse, Error>
 
