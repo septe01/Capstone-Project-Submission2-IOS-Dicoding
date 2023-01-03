@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1780E3794BC1779E569A69D2 /* Pods_Capstone_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D173E6CD7E73328863FE61 /* Pods_Capstone_Project.framework */; };
 		B31BD2612943F5BE00811C56 /* CategoryDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD2602943F5BE00811C56 /* CategoryDetailInteractor.swift */; };
 		B31BD2652943F86A00811C56 /* FoodRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD2642943F86A00811C56 /* FoodRoute.swift */; };
 		B31BD2672943F9B400811C56 /* FoodDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD2662943F9B400811C56 /* FoodDetailPresenter.swift */; };
@@ -50,8 +51,24 @@
 		B3BB473B2943689800720A82 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB473A2943689800720A82 /* Color+Ext.swift */; };
 		B3BB473E2943696600720A82 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B3BB473D2943696600720A82 /* SDWebImageSwiftUI */; };
 		B3BB47402943698800720A82 /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB473F2943698800720A82 /* FoodRow.swift */; };
+		B3D9B82129646BDF00973C96 /* About.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9B82029646BDF00973C96 /* About.framework */; };
+		B3D9B82229646BDF00973C96 /* About.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9B82029646BDF00973C96 /* About.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3E794302940CB69005EAB73 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7942F2940CB69005EAB73 /* APICall.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B3D9B82329646BDF00973C96 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B3D9B82229646BDF00973C96 /* About.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B31BD2602943F5BE00811C56 /* CategoryDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailInteractor.swift; sourceTree = "<group>"; };
@@ -94,8 +111,13 @@
 		B3BB471E294321AA00720A82 /* FoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPresenter.swift; sourceTree = "<group>"; };
 		B3BB473A2943689800720A82 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		B3BB473F2943698800720A82 /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
+		B3D9B8022964693300973C96 /* About.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = About.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D9B82029646BDF00973C96 /* About.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = About.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7942F2940CB69005EAB73 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		B3E794312940CCB1005EAB73 /* Capstone-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Capstone-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DD5D19E442E3DB9A67A08DB6 /* Pods-Capstone Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone Project.release.xcconfig"; path = "Target Support Files/Pods-Capstone Project/Pods-Capstone Project.release.xcconfig"; sourceTree = "<group>"; };
+		E07728491D2588502D32ABD2 /* Pods-Capstone Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone Project.debug.xcconfig"; path = "Target Support Files/Pods-Capstone Project/Pods-Capstone Project.debug.xcconfig"; sourceTree = "<group>"; };
+		E4D173E6CD7E73328863FE61 /* Pods_Capstone_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capstone_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +129,24 @@
 				B373D5132945432B003894B7 /* Realm in Frameworks */,
 				B3BB473E2943696600720A82 /* SDWebImageSwiftUI in Frameworks */,
 				B3405DF42941548C006734A5 /* Alamofire in Frameworks */,
+				B3D9B82129646BDF00973C96 /* About.framework in Frameworks */,
+				1780E3794BC1779E569A69D2 /* Pods_Capstone_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15782F753C08D42822A12E9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3D9B82029646BDF00973C96 /* About.framework */,
+				B3D9B8022964693300973C96 /* About.framework */,
+				E4D173E6CD7E73328863FE61 /* Pods_Capstone_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B31BD25B2943F3F500811C56 /* DetailFood */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +185,8 @@
 			children = (
 				B33BDC2D293EC1260043C2DB /* Capstone Project */,
 				B33BDC2C293EC1260043C2DB /* Products */,
+				C3C543BEEB32099A13C90D89 /* Pods */,
+				15782F753C08D42822A12E9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -561,6 +597,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		C3C543BEEB32099A13C90D89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E07728491D2588502D32ABD2 /* Pods-Capstone Project.debug.xcconfig */,
+				DD5D19E442E3DB9A67A08DB6 /* Pods-Capstone Project.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -568,10 +613,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B33BDC39293EC1270043C2DB /* Build configuration list for PBXNativeTarget "Capstone Project" */;
 			buildPhases = (
+				B36973D7A944AEBBF52FC413 /* [CP] Check Pods Manifest.lock */,
 				B33BDC27293EC1260043C2DB /* Sources */,
 				B33BDC28293EC1260043C2DB /* Frameworks */,
 				B33BDC29293EC1260043C2DB /* Resources */,
 				B33BDC3F293EC73C0043C2DB /* ShellScript */,
+				B3D9B82329646BDF00973C96 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -655,6 +702,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+		B36973D7A944AEBBF52FC413 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Capstone Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -823,6 +892,7 @@
 		};
 		B33BDC3A293EC1270043C2DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E07728491D2588502D32ABD2 /* Pods-Capstone Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -853,6 +923,7 @@
 		};
 		B33BDC3B293EC1270043C2DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD5D19E442E3DB9A67A08DB6 /* Pods-Capstone Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
