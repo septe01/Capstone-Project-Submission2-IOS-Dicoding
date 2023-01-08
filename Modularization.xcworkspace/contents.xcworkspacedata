@@ -5,18 +5,18 @@
       location = "group:Capstone Project.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Core/Core.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../About/About.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Favorite/Favorite.xcodeproj">
+      location = "group:Modul/About/About.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Food/Food.xcodeproj">
+      location = "group:Modul/Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modul/Favorite/Favorite.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modul/Food/Food.xcodeproj">
    </FileRef>
 </Workspace>

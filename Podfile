@@ -15,17 +15,17 @@ target 'Capstone Project' do
 end
 
 target 'About' do
-  project '../About/About'
+  project 'Modul/About/About'
 end
 
 target 'Food' do
-  project '../Food/Food'
+  project 'Modul/Food/Food'
 end
 
 target 'Favorite' do
-  project '../Favorite/Favorite'
+  project 'Modul/Favorite/Favorite'
 end
 
 target 'Core' do
-  project '../Core/Core'
+  project 'Modul/Core/Core'
 end
