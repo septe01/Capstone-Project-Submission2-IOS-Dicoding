@@ -17,3 +17,15 @@ end
 target 'About' do
   project '../About/About'
 end
+
+target 'Food' do
+  project '../Food/Food'
+end
+
+target 'Favorite' do
+  project '../Favorite/Favorite'
+end
+
+target 'Core' do
+  project '../Core/Core'
+end

@@ -6,6 +6,11 @@
 //
 
 import SwiftUI
+import About
+import Food
+import Favorite
+import Core
+
 
 struct BottomTabBar: View {
     @State var selection = 1
@@ -17,14 +22,14 @@ struct BottomTabBar: View {
     var body: some View {
         TabView(selection: $selection) {
             NavigationView(content: {
-                FoodsView()
+                FoodView()
             }
             ).tabItem {
                 Label("Home", systemImage: "house.fill")
             }
             .tag(1)
             .environmentObject(foodPresenter)
-
+            
             NavigationView(content: {
                 FavoriteView()
             })
@@ -34,12 +39,15 @@ struct BottomTabBar: View {
             .tag(2)
             .environmentObject(favoritePresenter)
 
-            AboutView()
+
+            About()
                 .tabItem {
-                    Label("About", systemImage: "person.crop.circle.fill")
-                }
-                .tag(3)
-                .environmentObject(profilePresenter)
+                Label("About", systemImage: "person.crop.circle.fill")
+            }
+            .tag(3)
+            .environmentObject(profilePresenter)
+
+
         }
         .accentColor(Color("ColorGreyDark"))
     }
