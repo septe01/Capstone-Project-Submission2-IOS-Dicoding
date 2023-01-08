@@ -11,14 +11,14 @@
 		B33BDC2F293EC1260043C2DB /* Capstone_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BDC2E293EC1260043C2DB /* Capstone_ProjectApp.swift */; };
 		B33BDC33293EC1270043C2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33BDC32293EC1270043C2DB /* Assets.xcassets */; };
 		B33BDC36293EC1270043C2DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33BDC35293EC1270043C2DB /* Preview Assets.xcassets */; };
+		B33ECFEB296AC7E7007508CB /* Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33ECFEA296AC7E7007508CB /* Favorite.framework */; };
+		B33ECFEC296AC7E7007508CB /* Favorite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B33ECFEA296AC7E7007508CB /* Favorite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B33ECFEE296AC7EE007508CB /* Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33ECFED296AC7EE007508CB /* Food.framework */; };
+		B33ECFEF296AC7EE007508CB /* Food.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B33ECFED296AC7EE007508CB /* Food.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3423B592940188300D5C381 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3423B582940188300D5C381 /* BottomTabBar.swift */; };
 		B3D99472296A9CEB00F54D06 /* Capstone_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D99471296A9CEB00F54D06 /* Capstone_ProjectTests.swift */; };
 		B3D9947C296A9FD200F54D06 /* About.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9947B296A9FD200F54D06 /* About.framework */; };
 		B3D9947D296A9FD200F54D06 /* About.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9947B296A9FD200F54D06 /* About.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3F9A7452968DDF6009C97BD /* Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F9A7432968DDF6009C97BD /* Favorite.framework */; };
-		B3F9A7462968DDF6009C97BD /* Favorite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3F9A7432968DDF6009C97BD /* Favorite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3F9A7472968DDF6009C97BD /* Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F9A7442968DDF6009C97BD /* Food.framework */; };
-		B3F9A7482968DDF6009C97BD /* Food.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3F9A7442968DDF6009C97BD /* Food.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B3F9A7482968DDF6009C97BD /* Food.framework in Embed Frameworks */,
+				B33ECFEF296AC7EE007508CB /* Food.framework in Embed Frameworks */,
+				B33ECFEC296AC7E7007508CB /* Favorite.framework in Embed Frameworks */,
 				B3D9947D296A9FD200F54D06 /* About.framework in Embed Frameworks */,
-				B3F9A7462968DDF6009C97BD /* Favorite.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +59,8 @@
 		B33BDC2E293EC1260043C2DB /* Capstone_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectApp.swift; sourceTree = "<group>"; };
 		B33BDC32293EC1270043C2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B33BDC35293EC1270043C2DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B33ECFEA296AC7E7007508CB /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33ECFED296AC7EE007508CB /* Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Food.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3423B582940188300D5C381 /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
 		B3D99407296A2FBA00F54D06 /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = ../Core/Core.xcodeproj; sourceTree = "<group>"; };
 		B3D9946F296A9CEB00F54D06 /* Capstone ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capstone ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,9 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3F9A7472968DDF6009C97BD /* Food.framework in Frameworks */,
-				B3F9A7452968DDF6009C97BD /* Favorite.framework in Frameworks */,
+				B33ECFEB296AC7E7007508CB /* Favorite.framework in Frameworks */,
 				B3D9947C296A9FD200F54D06 /* About.framework in Frameworks */,
+				B33ECFEE296AC7EE007508CB /* Food.framework in Frameworks */,
 				1780E3794BC1779E569A69D2 /* Pods_Capstone_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +101,8 @@
 		15782F753C08D42822A12E9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B33ECFED296AC7EE007508CB /* Food.framework */,
+				B33ECFEA296AC7E7007508CB /* Favorite.framework */,
 				B3D9947B296A9FD200F54D06 /* About.framework */,
 				B3D99407296A2FBA00F54D06 /* Core.xcodeproj */,
 				B3F9A7432968DDF6009C97BD /* Favorite.framework */,

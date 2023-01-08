@@ -1,14 +1,17 @@
 //
-//  FoodRoute.swift
-//  Food
+//  FavoriteRoute.swift
+//  Favorite
 //
 //  Created by septe habudin on 08/01/23.
 //
 
+import Foundation
 import SwiftUI
 import Core
+import Food
 
-class FoodRoute {
+
+class FavoriteRoute {
 
     func makeDetailView(for category: CategoryModel) -> some View {
         let categoryDetailUseCase = Injection.init().provideDetailCategory(category: category)

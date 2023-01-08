@@ -2,7 +2,7 @@
 //  Favorite.h
 //  Favorite
 //
-//  Created by septe habudin on 07/01/23.
+//  Created by septe habudin on 08/01/23.
 //
 
 #import <Foundation/Foundation.h>

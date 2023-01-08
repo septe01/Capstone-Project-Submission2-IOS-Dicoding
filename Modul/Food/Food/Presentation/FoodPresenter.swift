@@ -48,4 +48,3 @@ public class FoodPresenter: ObservableObject {
             destination: router.makeDetailView(for: category)) { content() }
     }
 }
-

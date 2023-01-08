@@ -7,141 +7,141 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7757DCC813038CABE54FCC01 /* Pods_Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10839E4E2270ECA284A95E0F /* Pods_Favorite.framework */; };
-		B3D99413296A30D400F54D06 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D99412296A30D400F54D06 /* FavoriteView.swift */; };
-		B3D99415296A316100F54D06 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D99414296A316100F54D06 /* FavoritePresenter.swift */; };
-		B3D99418296A31DA00F54D06 /* FavoriteRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D99417296A31DA00F54D06 /* FavoriteRoute.swift */; };
-		B3D99461296A589800F54D06 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D99460296A589800F54D06 /* Core.framework */; };
-		B3D99465296A59CF00F54D06 /* Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D99464296A59CF00F54D06 /* Food.framework */; };
-		B3F9A7262968DC68009C97BD /* Favorite.docc in Sources */ = {isa = PBXBuildFile; fileRef = B3F9A7252968DC68009C97BD /* Favorite.docc */; };
-		B3F9A7272968DC68009C97BD /* Favorite.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F9A7242968DC68009C97BD /* Favorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B33ECFBB296AC5C3007508CB /* Favorite.docc in Sources */ = {isa = PBXBuildFile; fileRef = B33ECFBA296AC5C3007508CB /* Favorite.docc */; };
+		B33ECFBC296AC5C3007508CB /* Favorite.h in Headers */ = {isa = PBXBuildFile; fileRef = B33ECFB9296AC5C3007508CB /* Favorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B33ED000296AC898007508CB /* FavoriteRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ECFFF296AC898007508CB /* FavoriteRoute.swift */; };
+		B33ED002296AC8AD007508CB /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ED001296AC8AD007508CB /* FavoritePresenter.swift */; };
+		B33ED004296AC8C6007508CB /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ED003296AC8C6007508CB /* FavoriteView.swift */; };
+		B33ED006296AC8F4007508CB /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33ED005296AC8F4007508CB /* Core.framework */; };
+		B33ED00A296AC8F9007508CB /* Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33ED009296AC8F9007508CB /* Food.framework */; };
+		D800E514A787FEBFC047DBF5 /* Pods_Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D9F98C2269C2B42AED11F2 /* Pods_Favorite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10839E4E2270ECA284A95E0F /* Pods_Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50B97D9AFD4C7662AF9FAF0F /* Pods-Favorite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-Favorite/Pods-Favorite.release.xcconfig"; sourceTree = "<group>"; };
-		B3D99412296A30D400F54D06 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
-		B3D99414296A316100F54D06 /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
-		B3D99417296A31DA00F54D06 /* FavoriteRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRoute.swift; sourceTree = "<group>"; };
-		B3D99460296A589800F54D06 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3D99464296A59CF00F54D06 /* Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Food.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3F9A7212968DC68009C97BD /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3F9A7242968DC68009C97BD /* Favorite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Favorite.h; sourceTree = "<group>"; };
-		B3F9A7252968DC68009C97BD /* Favorite.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Favorite.docc; sourceTree = "<group>"; };
-		F24CA72A9E103762B923D152 /* Pods-Favorite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-Favorite/Pods-Favorite.debug.xcconfig"; sourceTree = "<group>"; };
+		03D9F98C2269C2B42AED11F2 /* Pods_Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		448CE5537DF1C4DC362D3AA6 /* Pods-Favorite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.release.xcconfig"; path = "Target Support Files/Pods-Favorite/Pods-Favorite.release.xcconfig"; sourceTree = "<group>"; };
+		B33ECFB6296AC5C3007508CB /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33ECFB9296AC5C3007508CB /* Favorite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Favorite.h; sourceTree = "<group>"; };
+		B33ECFBA296AC5C3007508CB /* Favorite.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Favorite.docc; sourceTree = "<group>"; };
+		B33ECFFF296AC898007508CB /* FavoriteRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRoute.swift; sourceTree = "<group>"; };
+		B33ED001296AC8AD007508CB /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		B33ED003296AC8C6007508CB /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		B33ED005296AC8F4007508CB /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33ED009296AC8F9007508CB /* Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Food.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B946EB7A9AA1FCF5FCF9D120 /* Pods-Favorite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.debug.xcconfig"; path = "Target Support Files/Pods-Favorite/Pods-Favorite.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B3F9A71E2968DC68009C97BD /* Frameworks */ = {
+		B33ECFB3296AC5C3007508CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D99465296A59CF00F54D06 /* Food.framework in Frameworks */,
-				7757DCC813038CABE54FCC01 /* Pods_Favorite.framework in Frameworks */,
-				B3D99461296A589800F54D06 /* Core.framework in Frameworks */,
+				B33ED00A296AC8F9007508CB /* Food.framework in Frameworks */,
+				D800E514A787FEBFC047DBF5 /* Pods_Favorite.framework in Frameworks */,
+				B33ED006296AC8F4007508CB /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26574EE7EC8F1D052162C133 /* Frameworks */ = {
+		2003847EAA21D95CB932ED15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3D99464296A59CF00F54D06 /* Food.framework */,
-				B3D99460296A589800F54D06 /* Core.framework */,
-				10839E4E2270ECA284A95E0F /* Pods_Favorite.framework */,
+				B33ED009296AC8F9007508CB /* Food.framework */,
+				B33ED005296AC8F4007508CB /* Core.framework */,
+				03D9F98C2269C2B42AED11F2 /* Pods_Favorite.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B3D9940E296A305400F54D06 /* View */ = {
+		B33ECFAC296AC5C3007508CB = {
 			isa = PBXGroup;
 			children = (
-				B3D99412296A30D400F54D06 /* FavoriteView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B3D9940F296A306500F54D06 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				B3D99414296A316100F54D06 /* FavoritePresenter.swift */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		B3D99416296A31AD00F54D06 /* Route */ = {
-			isa = PBXGroup;
-			children = (
-				B3D99417296A31DA00F54D06 /* FavoriteRoute.swift */,
-			);
-			path = Route;
-			sourceTree = "<group>";
-		};
-		B3F9A7172968DC68009C97BD = {
-			isa = PBXGroup;
-			children = (
-				B3D9940E296A305400F54D06 /* View */,
-				B3D9940F296A306500F54D06 /* Presentation */,
-				B3D99416296A31AD00F54D06 /* Route */,
-				B3F9A7232968DC68009C97BD /* Favorite */,
-				B3F9A7222968DC68009C97BD /* Products */,
-				F9DB71CD385101C14840CD11 /* Pods */,
-				26574EE7EC8F1D052162C133 /* Frameworks */,
+				B33ECFB8296AC5C3007508CB /* Favorite */,
+				B33ECFB7296AC5C3007508CB /* Products */,
+				CBDD640CC3F0F654261C916A /* Pods */,
+				2003847EAA21D95CB932ED15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		B3F9A7222968DC68009C97BD /* Products */ = {
+		B33ECFB7296AC5C3007508CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3F9A7212968DC68009C97BD /* Favorite.framework */,
+				B33ECFB6296AC5C3007508CB /* Favorite.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B3F9A7232968DC68009C97BD /* Favorite */ = {
+		B33ECFB8296AC5C3007508CB /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
-				B3F9A7242968DC68009C97BD /* Favorite.h */,
-				B3F9A7252968DC68009C97BD /* Favorite.docc */,
+				B33ECFFE296AC883007508CB /* View */,
+				B33ECFFD296AC878007508CB /* Presentation */,
+				B33ECFFC296AC86F007508CB /* Route */,
+				B33ECFB9296AC5C3007508CB /* Favorite.h */,
+				B33ECFBA296AC5C3007508CB /* Favorite.docc */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
 		};
-		F9DB71CD385101C14840CD11 /* Pods */ = {
+		B33ECFFC296AC86F007508CB /* Route */ = {
 			isa = PBXGroup;
 			children = (
-				F24CA72A9E103762B923D152 /* Pods-Favorite.debug.xcconfig */,
-				50B97D9AFD4C7662AF9FAF0F /* Pods-Favorite.release.xcconfig */,
+				B33ECFFF296AC898007508CB /* FavoriteRoute.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		B33ECFFD296AC878007508CB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B33ED001296AC8AD007508CB /* FavoritePresenter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B33ECFFE296AC883007508CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B33ED003296AC8C6007508CB /* FavoriteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBDD640CC3F0F654261C916A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B946EB7A9AA1FCF5FCF9D120 /* Pods-Favorite.debug.xcconfig */,
+				448CE5537DF1C4DC362D3AA6 /* Pods-Favorite.release.xcconfig */,
 			);
 			name = Pods;
-			path = "../Capstone Project/Pods";
+			path = ../../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B3F9A71C2968DC68009C97BD /* Headers */ = {
+		B33ECFB1296AC5C3007508CB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3F9A7272968DC68009C97BD /* Favorite.h in Headers */,
+				B33ECFBC296AC5C3007508CB /* Favorite.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B3F9A7202968DC68009C97BD /* Favorite */ = {
+		B33ECFB5296AC5C3007508CB /* Favorite */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3F9A72A2968DC68009C97BD /* Build configuration list for PBXNativeTarget "Favorite" */;
+			buildConfigurationList = B33ECFBF296AC5C3007508CB /* Build configuration list for PBXNativeTarget "Favorite" */;
 			buildPhases = (
-				A659ED2C2356DA02E9492ADE /* [CP] Check Pods Manifest.lock */,
-				B3F9A71C2968DC68009C97BD /* Headers */,
-				B3F9A71D2968DC68009C97BD /* Sources */,
-				B3F9A71E2968DC68009C97BD /* Frameworks */,
-				B3F9A71F2968DC68009C97BD /* Resources */,
+				B5437665CD62A02A16F43320 /* [CP] Check Pods Manifest.lock */,
+				B33ECFB1296AC5C3007508CB /* Headers */,
+				B33ECFB2296AC5C3007508CB /* Sources */,
+				B33ECFB3296AC5C3007508CB /* Frameworks */,
+				B33ECFB4296AC5C3007508CB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -149,24 +149,24 @@
 			);
 			name = Favorite;
 			productName = Favorite;
-			productReference = B3F9A7212968DC68009C97BD /* Favorite.framework */;
+			productReference = B33ECFB6296AC5C3007508CB /* Favorite.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B3F9A7182968DC68009C97BD /* Project object */ = {
+		B33ECFAD296AC5C3007508CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					B3F9A7202968DC68009C97BD = {
+					B33ECFB5296AC5C3007508CB = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
-			buildConfigurationList = B3F9A71B2968DC68009C97BD /* Build configuration list for PBXProject "Favorite" */;
+			buildConfigurationList = B33ECFB0296AC5C3007508CB /* Build configuration list for PBXProject "Favorite" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,18 +174,18 @@
 				en,
 				Base,
 			);
-			mainGroup = B3F9A7172968DC68009C97BD;
-			productRefGroup = B3F9A7222968DC68009C97BD /* Products */;
+			mainGroup = B33ECFAC296AC5C3007508CB;
+			productRefGroup = B33ECFB7296AC5C3007508CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B3F9A7202968DC68009C97BD /* Favorite */,
+				B33ECFB5296AC5C3007508CB /* Favorite */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B3F9A71F2968DC68009C97BD /* Resources */ = {
+		B33ECFB4296AC5C3007508CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -195,7 +195,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A659ED2C2356DA02E9492ADE /* [CP] Check Pods Manifest.lock */ = {
+		B5437665CD62A02A16F43320 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,21 +220,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B3F9A71D2968DC68009C97BD /* Sources */ = {
+		B33ECFB2296AC5C3007508CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D99415296A316100F54D06 /* FavoritePresenter.swift in Sources */,
-				B3D99418296A31DA00F54D06 /* FavoriteRoute.swift in Sources */,
-				B3D99413296A30D400F54D06 /* FavoriteView.swift in Sources */,
-				B3F9A7262968DC68009C97BD /* Favorite.docc in Sources */,
+				B33ED004296AC8C6007508CB /* FavoriteView.swift in Sources */,
+				B33ED002296AC8AD007508CB /* FavoritePresenter.swift in Sources */,
+				B33ECFBB296AC5C3007508CB /* Favorite.docc in Sources */,
+				B33ED000296AC898007508CB /* FavoriteRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B3F9A7282968DC68009C97BD /* Debug */ = {
+		B33ECFBD296AC5C3007508CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,6 +268,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -295,7 +296,7 @@
 			};
 			name = Debug;
 		};
-		B3F9A7292968DC68009C97BD /* Release */ = {
+		B33ECFBE296AC5C3007508CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -329,6 +330,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -349,12 +351,13 @@
 			};
 			name = Release;
 		};
-		B3F9A72B2968DC68009C97BD /* Debug */ = {
+		B33ECFC0296AC5C3007508CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F24CA72A9E103762B923D152 /* Pods-Favorite.debug.xcconfig */;
+			baseConfigurationReference = B946EB7A9AA1FCF5FCF9D120 /* Pods-Favorite.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q36DPB2949;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -385,12 +388,13 @@
 			};
 			name = Debug;
 		};
-		B3F9A72C2968DC68009C97BD /* Release */ = {
+		B33ECFC1296AC5C3007508CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50B97D9AFD4C7662AF9FAF0F /* Pods-Favorite.release.xcconfig */;
+			baseConfigurationReference = 448CE5537DF1C4DC362D3AA6 /* Pods-Favorite.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q36DPB2949;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -424,25 +428,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B3F9A71B2968DC68009C97BD /* Build configuration list for PBXProject "Favorite" */ = {
+		B33ECFB0296AC5C3007508CB /* Build configuration list for PBXProject "Favorite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3F9A7282968DC68009C97BD /* Debug */,
-				B3F9A7292968DC68009C97BD /* Release */,
+				B33ECFBD296AC5C3007508CB /* Debug */,
+				B33ECFBE296AC5C3007508CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3F9A72A2968DC68009C97BD /* Build configuration list for PBXNativeTarget "Favorite" */ = {
+		B33ECFBF296AC5C3007508CB /* Build configuration list for PBXNativeTarget "Favorite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3F9A72B2968DC68009C97BD /* Debug */,
-				B3F9A72C2968DC68009C97BD /* Release */,
+				B33ECFC0296AC5C3007508CB /* Debug */,
+				B33ECFC1296AC5C3007508CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B3F9A7182968DC68009C97BD /* Project object */;
+	rootObject = B33ECFAD296AC5C3007508CB /* Project object */;
 }
