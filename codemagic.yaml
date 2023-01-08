@@ -7,7 +7,7 @@ workflows:
       vars:
 #        XCODE_PROJECT: "Triangle App.xcodeproj" # Isikan nama project Anda.
         XCODE_WORKSPACE: "Modularization.xcworkspace" # <-- Name of your Xcode workspace
-        XCODE_SCHEME: "Capstone Project" # Isikan nama scheme project Anda.
+        XCODE_SCHEME: "Modularization" # Isikan nama scheme project Anda.
     scripts:
       - name: Run tests
         script: |
