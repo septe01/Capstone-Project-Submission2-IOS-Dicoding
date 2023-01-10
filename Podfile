@@ -14,9 +14,9 @@ target 'Capstone Project' do
 
 end
 
-target 'About' do
-  project 'Modul/About/About'
-end
+#target 'About' do
+  #project 'Modul/About/About'
+#end
 
 target 'Food' do
   project 'Modul/Food/Food'

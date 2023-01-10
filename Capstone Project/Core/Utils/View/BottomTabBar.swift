@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import About
+import CPAboutPackage
 import Food
 import Favorite
 import Core

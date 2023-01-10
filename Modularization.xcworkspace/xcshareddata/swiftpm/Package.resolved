@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "capstone-project-about-package2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/septe01/Capstone-Project-About-Package2.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1efcc54f8b38ccd0def88576d95f11df1d5cb574"
+      }
+    },
+    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core.git",

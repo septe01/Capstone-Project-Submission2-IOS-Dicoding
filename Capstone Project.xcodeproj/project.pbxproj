@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1780E3794BC1779E569A69D2 /* Pods_Capstone_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D173E6CD7E73328863FE61 /* Pods_Capstone_Project.framework */; };
+		B30167B4296D7D1E00C11994 /* CPAboutPackage in Frameworks */ = {isa = PBXBuildFile; productRef = B30167B3296D7D1E00C11994 /* CPAboutPackage */; };
 		B33BDC2F293EC1260043C2DB /* Capstone_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BDC2E293EC1260043C2DB /* Capstone_ProjectApp.swift */; };
 		B33BDC33293EC1270043C2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33BDC32293EC1270043C2DB /* Assets.xcassets */; };
 		B33BDC36293EC1270043C2DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33BDC35293EC1270043C2DB /* Preview Assets.xcassets */; };
@@ -17,8 +18,6 @@
 		B33ECFEF296AC7EE007508CB /* Food.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B33ECFED296AC7EE007508CB /* Food.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3423B592940188300D5C381 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3423B582940188300D5C381 /* BottomTabBar.swift */; };
 		B3D99472296A9CEB00F54D06 /* Capstone_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D99471296A9CEB00F54D06 /* Capstone_ProjectTests.swift */; };
-		B3D9947C296A9FD200F54D06 /* About.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9947B296A9FD200F54D06 /* About.framework */; };
-		B3D9947D296A9FD200F54D06 /* About.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9947B296A9FD200F54D06 /* About.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,6 @@
 			files = (
 				B33ECFEF296AC7EE007508CB /* Food.framework in Embed Frameworks */,
 				B33ECFEC296AC7E7007508CB /* Favorite.framework in Embed Frameworks */,
-				B3D9947D296A9FD200F54D06 /* About.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,8 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30167B4296D7D1E00C11994 /* CPAboutPackage in Frameworks */,
 				B33ECFEB296AC7E7007508CB /* Favorite.framework in Frameworks */,
-				B3D9947C296A9FD200F54D06 /* About.framework in Frameworks */,
 				B33ECFEE296AC7EE007508CB /* Food.framework in Frameworks */,
 				1780E3794BC1779E569A69D2 /* Pods_Capstone_Project.framework in Frameworks */,
 			);
@@ -239,6 +237,7 @@
 			);
 			name = "Capstone Project";
 			packageProductDependencies = (
+				B30167B3296D7D1E00C11994 /* CPAboutPackage */,
 			);
 			productName = "Capstone Project";
 			productReference = B33BDC2B293EC1260043C2DB /* Capstone Project.app */;
@@ -291,6 +290,7 @@
 			);
 			mainGroup = B33BDC22293EC1260043C2DB;
 			packageReferences = (
+				B30167B2296D7D1E00C11994 /* XCRemoteSwiftPackageReference "Capstone-Project-About-Package2" */,
 			);
 			productRefGroup = B33BDC2C293EC1260043C2DB /* Products */;
 			projectDirPath = "";
@@ -651,6 +651,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B30167B2296D7D1E00C11994 /* XCRemoteSwiftPackageReference "Capstone-Project-About-Package2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/septe01/Capstone-Project-About-Package2.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B30167B3296D7D1E00C11994 /* CPAboutPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B30167B2296D7D1E00C11994 /* XCRemoteSwiftPackageReference "Capstone-Project-About-Package2" */;
+			productName = CPAboutPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B33BDC23293EC1260043C2DB /* Project object */;
 }
