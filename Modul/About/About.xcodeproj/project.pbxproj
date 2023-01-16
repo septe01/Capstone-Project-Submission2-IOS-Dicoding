@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AD1D0F6297528F8001C0C6A /* CPCorePackage2 in Frameworks */ = {isa = PBXBuildFile; productRef = 2AD1D0F5297528F8001C0C6A /* CPCorePackage2 */; };
 		3C712EC471B9E28807DF8F6F /* Pods_About.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858103A177D918FE382F6052 /* Pods_About.framework */; };
 		B3D99486296AA01C00F54D06 /* About.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9B81229646B3800973C96 /* About.framework */; platformFilter = ios; };
 		B3D9B81729646B3800973C96 /* About.docc in Sources */ = {isa = PBXBuildFile; fileRef = B3D9B81629646B3800973C96 /* About.docc */; };
 		B3D9B81829646B3800973C96 /* About.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D9B81529646B3800973C96 /* About.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3F9A74E2969774C009C97BD /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9A74D2969774C009C97BD /* About.swift */; };
 		B3F9A772296982B4009C97BD /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9A771296982B4009C97BD /* ProfilePresenter.swift */; };
-		B3F9A774296982D3009C97BD /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F9A773296982D3009C97BD /* Core.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD1D0F6297528F8001C0C6A /* CPCorePackage2 in Frameworks */,
 				3C712EC471B9E28807DF8F6F /* Pods_About.framework in Frameworks */,
-				B3F9A774296982D3009C97BD /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +172,9 @@
 			dependencies = (
 			);
 			name = About;
+			packageProductDependencies = (
+				2AD1D0F5297528F8001C0C6A /* CPCorePackage2 */,
+			);
 			productName = About;
 			productReference = B3D9B81229646B3800973C96 /* About.framework */;
 			productType = "com.apple.product-type.framework";
@@ -203,6 +206,9 @@
 				Base,
 			);
 			mainGroup = B3D9B80829646B3800973C96;
+			packageReferences = (
+				2AD1D0F4297528F8001C0C6A /* XCRemoteSwiftPackageReference "Capstone-Project-Core-Package2" */,
+			);
 			productRefGroup = B3D9B81329646B3800973C96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -540,6 +546,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2AD1D0F4297528F8001C0C6A /* XCRemoteSwiftPackageReference "Capstone-Project-Core-Package2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/septe01/Capstone-Project-Core-Package2";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2AD1D0F5297528F8001C0C6A /* CPCorePackage2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AD1D0F4297528F8001C0C6A /* XCRemoteSwiftPackageReference "Capstone-Project-Core-Package2" */;
+			productName = CPCorePackage2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3D9B80929646B3800973C96 /* Project object */;
 }
