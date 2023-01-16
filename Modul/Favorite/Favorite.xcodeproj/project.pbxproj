@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AD1D0F929752912001C0C6A /* CPCorePackage2 in Frameworks */ = {isa = PBXBuildFile; productRef = 2AD1D0F829752912001C0C6A /* CPCorePackage2 */; };
 		B33ECFBB296AC5C3007508CB /* Favorite.docc in Sources */ = {isa = PBXBuildFile; fileRef = B33ECFBA296AC5C3007508CB /* Favorite.docc */; };
 		B33ECFBC296AC5C3007508CB /* Favorite.h in Headers */ = {isa = PBXBuildFile; fileRef = B33ECFB9296AC5C3007508CB /* Favorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B33ED000296AC898007508CB /* FavoriteRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ECFFF296AC898007508CB /* FavoriteRoute.swift */; };
 		B33ED002296AC8AD007508CB /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ED001296AC8AD007508CB /* FavoritePresenter.swift */; };
 		B33ED004296AC8C6007508CB /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ED003296AC8C6007508CB /* FavoriteView.swift */; };
-		B33ED006296AC8F4007508CB /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33ED005296AC8F4007508CB /* Core.framework */; };
 		B33ED00A296AC8F9007508CB /* Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33ED009296AC8F9007508CB /* Food.framework */; };
 		D800E514A787FEBFC047DBF5 /* Pods_Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D9F98C2269C2B42AED11F2 /* Pods_Favorite.framework */; };
 /* End PBXBuildFile section */
@@ -36,9 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD1D0F929752912001C0C6A /* CPCorePackage2 in Frameworks */,
 				B33ED00A296AC8F9007508CB /* Food.framework in Frameworks */,
 				D800E514A787FEBFC047DBF5 /* Pods_Favorite.framework in Frameworks */,
-				B33ED006296AC8F4007508CB /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +148,9 @@
 			dependencies = (
 			);
 			name = Favorite;
+			packageProductDependencies = (
+				2AD1D0F829752912001C0C6A /* CPCorePackage2 */,
+			);
 			productName = Favorite;
 			productReference = B33ECFB6296AC5C3007508CB /* Favorite.framework */;
 			productType = "com.apple.product-type.framework";
@@ -175,6 +178,9 @@
 				Base,
 			);
 			mainGroup = B33ECFAC296AC5C3007508CB;
+			packageReferences = (
+				2AD1D0F729752912001C0C6A /* XCRemoteSwiftPackageReference "Capstone-Project-Core-Package2" */,
+			);
 			productRefGroup = B33ECFB7296AC5C3007508CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -447,6 +453,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2AD1D0F729752912001C0C6A /* XCRemoteSwiftPackageReference "Capstone-Project-Core-Package2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/septe01/Capstone-Project-Core-Package2";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2AD1D0F829752912001C0C6A /* CPCorePackage2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AD1D0F729752912001C0C6A /* XCRemoteSwiftPackageReference "Capstone-Project-Core-Package2" */;
+			productName = CPCorePackage2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B33ECFAD296AC5C3007508CB /* Project object */;
 }

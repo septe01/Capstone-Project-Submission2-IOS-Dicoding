@@ -25,7 +25,3 @@ end
 target 'Favorite' do
   project 'Modul/Favorite/Favorite'
 end
-
-target 'Core' do
-  project 'Modul/Core/Core'
-end

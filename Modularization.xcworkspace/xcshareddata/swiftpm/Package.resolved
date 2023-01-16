@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "capstone-project-core-package2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/septe01/Capstone-Project-Core-Package2",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a397432f49ae8f8097844c145a39212252774c89"
+      }
+    },
+    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core.git",
@@ -24,7 +33,7 @@
       "location" : "https://github.com/realm/realm-swift",
       "state" : {
         "branch" : "master",
-        "revision" : "cc847d103a190ea5aa3786bab67d44f3436f261f"
+        "revision" : "824b625945e37480299cc451591fcac3f4c839cf"
       }
     },
     {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AD1D0FC29752928001C0C6A /* CPCorePackage2 in Frameworks */ = {isa = PBXBuildFile; productRef = 2AD1D0FB29752928001C0C6A /* CPCorePackage2 */; };
 		B33ECFD3296AC6D5007508CB /* Food.docc in Sources */ = {isa = PBXBuildFile; fileRef = B33ECFD2296AC6D5007508CB /* Food.docc */; };
 		B33ECFD4296AC6D5007508CB /* Food.h in Headers */ = {isa = PBXBuildFile; fileRef = B33ECFD1296AC6D5007508CB /* Food.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B33ECFDF296AC735007508CB /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ECFDE296AC735007508CB /* FoodView.swift */; };
@@ -15,10 +16,7 @@
 		B33ECFE5296AC792007508CB /* FoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ECFE4296AC792007508CB /* FoodPresenter.swift */; };
 		B33ECFE7296AC7AE007508CB /* FoodDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ECFE6296AC7AE007508CB /* FoodDetailPresenter.swift */; };
 		B33ECFE9296AC7C9007508CB /* FoodRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ECFE8296AC7C9007508CB /* FoodRoute.swift */; };
-		B33ECFF2296AC81C007508CB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B33ECFF1296AC81C007508CB /* Realm */; };
-		B33ECFF4296AC81C007508CB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B33ECFF3296AC81C007508CB /* RealmSwift */; };
 		B33ECFF7296AC82F007508CB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B33ECFF6296AC82F007508CB /* SDWebImageSwiftUI */; };
-		B33ECFF9296AC84A007508CB /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33ECFF8296AC84A007508CB /* Core.framework */; };
 		D459D8BD310A54265586AD88 /* Pods_Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCF143ABCA0BE499FCFC411 /* Pods_Food.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,10 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD1D0FC29752928001C0C6A /* CPCorePackage2 in Frameworks */,
 				B33ECFF7296AC82F007508CB /* SDWebImageSwiftUI in Frameworks */,
-				B33ECFF4296AC81C007508CB /* RealmSwift in Frameworks */,
-				B33ECFF2296AC81C007508CB /* Realm in Frameworks */,
-				B33ECFF9296AC84A007508CB /* Core.framework in Frameworks */,
 				D459D8BD310A54265586AD88 /* Pods_Food.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,9 +156,8 @@
 			);
 			name = Food;
 			packageProductDependencies = (
-				B33ECFF1296AC81C007508CB /* Realm */,
-				B33ECFF3296AC81C007508CB /* RealmSwift */,
 				B33ECFF6296AC82F007508CB /* SDWebImageSwiftUI */,
+				2AD1D0FB29752928001C0C6A /* CPCorePackage2 */,
 			);
 			productName = Food;
 			productReference = B33ECFCE296AC6D5007508CB /* Food.framework */;
@@ -192,8 +187,8 @@
 			);
 			mainGroup = B33ECFC4296AC6D5007508CB;
 			packageReferences = (
-				B33ECFF0296AC81C007508CB /* XCRemoteSwiftPackageReference "realm-swift" */,
 				B33ECFF5296AC82F007508CB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				2AD1D0FA29752928001C0C6A /* XCRemoteSwiftPackageReference "Capstone-Project-Core-Package2" */,
 			);
 			productRefGroup = B33ECFCF296AC6D5007508CB /* Products */;
 			projectDirPath = "";
@@ -468,11 +463,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B33ECFF0296AC81C007508CB /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		2AD1D0FA29752928001C0C6A /* XCRemoteSwiftPackageReference "Capstone-Project-Core-Package2" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift";
+			repositoryURL = "https://github.com/septe01/Capstone-Project-Core-Package2";
 			requirement = {
-				branch = master;
+				branch = main;
 				kind = branch;
 			};
 		};
@@ -487,15 +482,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B33ECFF1296AC81C007508CB /* Realm */ = {
+		2AD1D0FB29752928001C0C6A /* CPCorePackage2 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B33ECFF0296AC81C007508CB /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		B33ECFF3296AC81C007508CB /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B33ECFF0296AC81C007508CB /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
+			package = 2AD1D0FA29752928001C0C6A /* XCRemoteSwiftPackageReference "Capstone-Project-Core-Package2" */;
+			productName = CPCorePackage2;
 		};
 		B33ECFF6296AC82F007508CB /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;

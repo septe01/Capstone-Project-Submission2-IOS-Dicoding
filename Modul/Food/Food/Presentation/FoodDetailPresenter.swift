@@ -7,7 +7,6 @@
 
 import Foundation
 import Combine
-import RealmSwift
 import Core
 
 public class FoodDetailPresenter: ObservableObject {
@@ -28,16 +27,17 @@ public class FoodDetailPresenter: ObservableObject {
     }
 
     func isFavorite(category: CategoryModel) {
-        let realm = try! Realm()
-        let isExist =  realm.objects(FavoriteCategoryEntity.self).where {
-            $0.id == category.id
-        }.first
-
-        if isExist != nil {
-            self.favorite = true
-        } else {
-            self.favorite = false
-        }
+//        Seharusnya tidak boleh memanggil Realm di sini, tetapi harusnya di Modul Core melalui Usecase.
+//        let realm = try! Realm()
+//        let isExist =  realm.objects(FavoriteCategoryEntity.self).where {
+//            $0.id == category.id
+//        }.first
+//
+//        if isExist != nil {
+//            self.favorite = true
+//        } else {
+//            self.favorite = false
+//        }
     }
 
     func addFavorite(category: CategoryModel) {
